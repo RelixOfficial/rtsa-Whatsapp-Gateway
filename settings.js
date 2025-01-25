@@ -10,7 +10,7 @@ global.pairingNumber = "6285877276864"; // whatsapp number used as a bot, for pa
 //========================================================
 
 global.pp_bot = fs.readFileSync("./image/logo.png"); // location and name of the logo
-global.use_pp = true; // use a logo?
+global.use_pp = false; // use a logo?
 
 //========================================================
 
