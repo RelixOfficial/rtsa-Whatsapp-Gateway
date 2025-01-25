@@ -5,7 +5,7 @@ global.port = "5001"; // Port Api / Browser
 global.countrycode = "ID"; // Country Code - https://countrycode.org/ (ISO CODES)
 global.countrycodephone = "62"; // Country Phone - https://countrycode.org/ (COUNTRY CODE)
 global.timezone = "Asia/Jakarta"; // Time Zone
-global.usePairingNumber = false; // true = Pairing Code / false = QRCode
+global.usePairingNumber = true; // true = Pairing Code / false = QRCode
 global.pairingNumber = "6285877276864"; // whatsapp number used as a bot, for pairing number
 //========================================================
 
