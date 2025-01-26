@@ -19,5 +19,5 @@ global.kirimkontak_admin = false; // true = automatically send admin contact
 
 //========================================================
 
-global.sessionName = "image"; // session name
+global.sessionName = "session"; // session name
 //========================================================
