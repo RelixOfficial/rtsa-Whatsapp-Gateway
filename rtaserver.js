@@ -124,7 +124,7 @@ async function Botstarted() {
     logger: pino({ level: "fatal" }).child({ level: "fatal" }),
     printQRInTerminal: !pairingCode,
     mobile: useMobile,
-    browser: ["Chrome (Linux)", "", ""],
+    browser: ["Ubuntu","Chrome","20.0.04"],
     auth: {
       creds: state.creds,
       keys: makeCacheableSignalKeyStore(
