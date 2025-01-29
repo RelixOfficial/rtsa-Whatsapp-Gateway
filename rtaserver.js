@@ -152,27 +152,7 @@ async function Botstarted() {
     if (!!pairingNumber) {
       phoneNumber = pairingNumber.replace(/[^0-9]/g, "");
 
-      if (
-        !Object.keys(PHONENUMBER_MCC).some((v) => phoneNumber.startsWith(v))
-      ) {
-        console.log("Start with your country's WhatsApp code, Example : 62xxx");
-        process.exit(0);
-      }
-    } else {
-      phoneNumber = await question(`Please type your WhatsApp number : `);
-      phoneNumber = phoneNumber.replace(/[^0-9]/g, "");
-
-      // Ask again when entering the wrong number
-      if (
-        !Object.keys(PHONENUMBER_MCC).some((v) => phoneNumber.startsWith(v))
-      ) {
-        console.log("Start with your country's WhatsApp code, Example : 62xxx");
-
-        phoneNumber = await question(`Please type your WhatsApp number : `);
-        phoneNumber = phoneNumber.replace(/[^0-9]/g, "");
-        rl.close();
-      }
-    }
+      
 
     setTimeout(async () => {
       let code = await rtaserver.requestPairingCode(phoneNumber);
